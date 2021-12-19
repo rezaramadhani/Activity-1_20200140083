@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--><html>
+    <head>
+        <title>Data Mahasiswa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> Data Mahasiswa UMY</div>
+        <hr/>
+        <p th:text="${DataMahasiswa}"></p>
+        <table border="1">
+            <tr th:each="UMY:${tabel}">
+                <td th:text="${UMY[0]}"></td>
+                <td th:text="${UMY[1]}"></td>
+                <td th:text="${UMY[2]}"></td>
+                <td th:text="${UMY[3]}"></td>
+            </tr>
+                
+        </table>
+           
+            
+           
+     </body>
+                </html>
